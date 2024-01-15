@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     labels: ['Día 1', 'Día 2', 'Día 3', 'Día 4'], // Etiquetas de los días
     datasets: [{
       label: 'Km recorridos en column-container-1',
-      data: [10, 15, 12, 18], // Datos de los km recorridos en cada día
+      data: [9, 10, 8, 13], // Datos de los km recorridos en cada día
       borderColor: 'rgba(75, 192, 192, 1)',
       fill: false,
       tension: 0.1
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     labels: ['Día 1', 'Día 2', 'Día 3', 'Día 4'], // Etiquetas de los días
     datasets: [{
       label: 'Km recorridos en column-container-2',
-      data: [15, 12, 18, 20], // Datos de los km recorridos en cada día
+      data: [4, 4.7, 9, 20], // Datos de los km recorridos en cada día
       borderColor: 'rgba(153, 102, 255, 1)',
       fill: false,
       tension: 0.1
