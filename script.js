@@ -49,14 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
     }
-  });
-  function onOpen() {
-    var ui = SpreadsheetApp.getUi();
-    ui.createMenu('Menu Personalizado')
-         .addItem('Agregar Marca de Agua', 'addWatermark')
-         .addToUi();
-   }
-   
+  });   
 
 function actualizarDiasRestantes() {
     // Obtener el título que contiene la fecha objetivo
@@ -76,7 +69,7 @@ function actualizarDiasRestantes() {
   
     // Mostrar el resultado
     const resultElement = document.getElementById('result');
-    resultElement.textContent = 'Faltan ${daysDiff} días para llegar a la carrera.';
+    resultElement.textContent = `Faltan ${daysDiff} días para llegar a la carrera.`;
     console.log("actualizarDiasRestantes function called");
     }
 
