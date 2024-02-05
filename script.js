@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const dataLine1 = {
     labels: ['Día 1', 'Día 2', 'Día 3', 'Día 4'], // Etiquetas de los días
     datasets: [{
-      label: 'Km recorridos en column-container-1',
-      data: [9, 10, 8, 13], // Datos de los km recorridos en cada día
+      label: 'Km recorridos en Semana 3',
+      data: [11, 7, 12, 15], // Datos de los km recorridos en cada día
       borderColor: 'rgba(75, 192, 192, 1)',
       fill: false,
       tension: 0.1
@@ -16,8 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const dataLine2 = {
     labels: ['Día 1', 'Día 2', 'Día 3', 'Día 4'], // Etiquetas de los días
     datasets: [{
-      label: 'Km recorridos en column-container-2',
-      data: [4, 4.7, 9, 20], // Datos de los km recorridos en cada día
+      label: 'Km recorridos en Semana 4',
+      data: [11, 17, 5, 25], // Datos de los km recorridos en cada día
       borderColor: 'rgba(153, 102, 255, 1)',
       fill: false,
       tension: 0.1
@@ -49,7 +49,14 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
     }
-  });   
+  });
+  function onOpen() {
+    var ui = SpreadsheetApp.getUi();
+    ui.createMenu('Menu Personalizado')
+         .addItem('Agregar Marca de Agua', 'addWatermark')
+         .addToUi();
+   }
+   
 
 function actualizarDiasRestantes() {
     // Obtener el título que contiene la fecha objetivo
@@ -109,3 +116,4 @@ function actualizarDiasRestantes() {
     document.getElementById("Semana 2").appendChild(video4);
 
 });
+
